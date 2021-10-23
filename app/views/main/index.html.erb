@@ -1,29 +1,514 @@
-<%
-# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
-# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
-# This program is free software; you can redistribute it and/or modify it under the
-# terms of the GNU Lesser General Public License as published by the Free Software
-# Foundation; either version 3.0 of the License, or (at your option) any later
-# version.
-#
-# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
-# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
-# You should have received a copy of the GNU Lesser General Public License along
-# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
-%>
-
-<div class="background">
-  <div class="container pt-9 pb-8">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
-        <% end %>
-      </div>
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr" translate="no" prefix="og: http://ogp.me/ns#" data-desktop>
+<head>
+   <meta charset="UTF-8"/>
+   <base href="https://qhkarimeh.com"/>
+   <title>E-learning Quran and Hadith</title>
+   <meta content="Center of the Quran and Hadith Hazrat Fatima Masumah Sacred Sanctuary" name="description"/>
+ <!--[if IE]>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<![endif]-->
+   <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.1, user-scalable=0" name="viewport"/>
+   <meta content="https://qhkarimeh.com" name="site:root"/>
+   <meta content="summary" name="twitter:card"/>
+   <meta content="home" name="twitter:title"/>
+   <meta content="Center of the Quran and Hadith Hazrat Fatima Masumah Sacred Sanctuary" name="twitter:description"/>
+   <meta content="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png?v=2" name="twitter:image"/>
+   <meta content="@jibres_com" name="twitter:site"/>
+   <meta content="@jibres_com" name="twitter:creator"/>
+   <meta content="https://qhkarimeh.com/" name="twitter:url"/>
+   <meta content="website" property="og:type"/>
+   <meta content="home" property="og:title"/>
+   <meta content="Center of the Quran and Hadith Hazrat Fatima Masumah Sacred Sanctuary" property="og:description"/>
+   <meta content="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png?v=2" property="og:image"/>
+   <meta content="https://qhkarimeh.com/" property="og:url"/>
+   <meta content="E-learning Quran and Hadith" property="og:site_name"/>
+   <meta content='en' property='og:locale'/>
+   <meta content="https://qhkarimeh.com/" name="jibres:sitelang"/>
+   <meta content="https://core.jibres.ir/" name="jibres:core"/>
+   <meta content="https://api.jibres.ir/" name="jibres:api"/>
+   <meta content="https://cdn.jibres.ir/" name="jibres:cdn"/>
+   <meta content="index, follow" name="robots"/>
+   <meta content="yes" name="mobile-web-app-capable"/>
+   <meta content="yes" name="apple-touch-fullscreen"/>
+   <meta content="yes" name="apple-mobile-web-app-capable"/>
+   <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+   <meta content="#c80a5a" name="theme-color"/>
+   <meta content="#c80a5a" name="msapplication-TileColor">
+   <meta content="E-learning Quran and Hadith" name="application-name"/>
+   <meta content="E-learning Quran and Hadith" name="apple-mobile-web-app-title"/>
+   <meta content="Jibres" name="generator"/>
+   <link href="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png?v=1" type="image/png" rel="icon"/>
+   <link href="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png?v=1" rel="shortcut icon"/>
+   <link href="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png?v=1" rel="apple-touch-startup-image"/>
+   <link href="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png?v=1" sizes="180x180" rel="apple-touch-icon"/>
+   <link href="https://qhkarimeh.com/manifest.webmanifest" rel="manifest"/>
+   <link href=https://cdn.jibres.ir/css/magic-v1.css?1634824660 rel="stylesheet"/>
+   <link href=https://cdn.jibres.ir/css/magic-migrate-v1.css?1634482394 rel="stylesheet"/>
+</head>
+<body data-env='jb2f9' data-in='business' data-page='home' data-preload>
+   <header id='pageHeader' data-xhr='pageHeader' data-scroll>
+    <div class='desktop'>
+        <header id="jHeader3" class="relative py-5">
+            <div class='m-auto w-full'>
+                <div class="actionBar flex items-center p-1 sm:p-2 md:p-3 bg-gray-50 rounded shadow-inner">
+                    <a href="https://qhkarimeh.com" class="flex-1 flex items-center">
+                        <img class="inline-block w-16 h-16 rounded" src="https://cloud.talambar.ir/jb2f9/202106/57-e8bc987fea27d94b145cec18dd946392.png" alt="E-learning Quran and Hadith">
+                        <h1 class="inline-block px-2 text-2xl font-bold">E-learning Quran and Hadith</h1>
+                    </a>
+                    <a class="h-12 w-12 p-3 mx-1 bg-gray-50 rounded-full relative transition hover:shadow-sm" href="https://qhkarimeh.com/search">
+                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 8c0-3.309 2.691-6 6-6s6 2.691 6 6-2.691 6-6 6-6-2.691-6-6zm17.707 10.293l-5.395-5.396A7.946 7.946 0 0016 8c0-4.411-3.589-8-8-8S0 3.589 0 8s3.589 8 8 8a7.954 7.954 0 004.897-1.688l5.396 5.395A.998.998 0 0020 19a1 1 0 00-.293-.707z" fill="#5C5F62"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="menuBar flex items-center bg-gray-50 rounded shadow-inner mt-2">
+                    <div class="flex-1">
+                    </div>
+                    <nav>
+                        <ul class="flex">
+                            <li data-layer="1" data-key="33">
+                                <a class="block p-1 sm:p-2 md:p-3 bg-gray-200 bg-opacity-0 hover:bg-opacity-70 transition" href="https://qhkarimeh.com/f/11">Sign Up</a>
+                            </li>
+                            <li data-layer="1" data-key="34">
+                                <a target="_blank" class="block p-1 sm:p-2 md:p-3 bg-gray-200 bg-opacity-0 hover:bg-opacity-70 transition" href="https://qhkarimeh.com/n/BB?preview=6abb2e957c69b8faac0943c81d761c9e">Donate</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
     </div>
-  </div>
+    <div class='pwa'>
+        <img class="logo" alt="E-learning Quran and Hadith" src="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png">
+        <div class='title'>E-learning Quran and Hadith</div>
+    </div>
+</header>
+<aside id='sidebar' data-xhr='sidebar'>
+</aside>
+<main id='pageContent' data-xhr='pageContent'>
+    <section data-type='headline1' class='flex overflow-hidden relative min-h-1/2 flex-wrap content-center justify-start' style='background-image:url(https://cloud.talambar.ir/jb2f9/202109/95-79e539def1e651b8665eaa3a0c7cd71e.jpg);background-repeat:repeat;background-attachment:fixed;background-position:center;background-size:cover;' id="headline1-35">
+        <div class="w-full h-full absolute" style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))">
+        </div>
+        <div class="sm:max-w-xl p-5 md:p-10 lg:p-14 z-10">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl leading-normal sm:md:leading-normal md:leading-normal mb-2 sm:mb-4 md:mb-6"  style='color:#ffffff'>E-learning Quran and Hadith</h2>
+            <div class="text-sm sm:text-base"  style='color:#ffffff'>Center of the Quran and Hadith Hazrat Fatima Masumah Sacred Sanctuary</div>
+        </div>
+    </section>
+    <section data-type='g3' class='flex overflow-hidden relative min-h-1/4 py-5' style='background:#a2c4c6;' id="g3-6">
+        <div class='m-auto max-w-screen-xl w-full px-2 sm:px-4 lg:px-5'>
+            <div class='grid grid-cols-6 gap-0.5 sm:gap-1 md:gap-2 lg:gap-4'>
+                <div class="row-span-2 col-span-6 md:col-span-4">
+                    <div class="swiper h-full overflow-hidden rounded-lg" data-swiper data-effect="slide">
+                        <div class="swiper-wrapper">
+                            <div class='swiper-slide' data-swiper-autoplay="5000">
+                                <a data-magicbox="dark" href='https://qhkarimeh.com/n/Bk?preview=78e1a593e616a09c305e0c10cd04699a'>
+                                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                                        <img loading='lazy' class='swiper-lazy object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/115-0f13632ecf3eb46f15de688b3add1097.png' alt='Virtual teaching'>
+                                        <div class="swiper-lazy-preloader">
+                                        </div>
+                                    </picture>
+                                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                                        <h3 class='leading-7 line-clamp-3'>Virtual teaching</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='swiper-slide' data-swiper-autoplay="5000">
+                                <a data-magicbox="dark" href='https://qhkarimeh.com/n/Bk?preview=78e1a593e616a09c305e0c10cd04699a'>
+                                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                                        <img loading='lazy' class='swiper-lazy object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/118-5455484acb5474631db945c7f5267595.jpg' alt='Virtual teaching2'>
+                                        <div class="swiper-lazy-preloader">
+                                        </div>
+                                    </picture>
+                                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                                        <h3 class='leading-7 line-clamp-3'>Virtual teaching2</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='swiper-slide' data-swiper-autoplay="5000">
+                                <a data-magicbox="dark" href='https://qhkarimeh.com/n/Bk?preview=78e1a593e616a09c305e0c10cd04699a'>
+                                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                                        <img loading='lazy' class='swiper-lazy object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/117-0ed2494fb26d9c7fe9bfac2aa9f29189.png' alt='Virtual teaching3'>
+                                        <div class="swiper-lazy-preloader">
+                                        </div>
+                                    </picture>
+                                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                                        <h3 class='leading-7 line-clamp-3'>Virtual teaching3</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class='swiper-slide' data-swiper-autoplay="5000">
+                                <a data-magicbox="dark" href='https://qhkarimeh.com/n/Bk?preview=78e1a593e616a09c305e0c10cd04699a'>
+                                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                                        <img loading='lazy' class='swiper-lazy object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/119-7a9b26bee5645481ad0c417f3fc8d6e6.webp' alt='Virtual teaching4'>
+                                        <div class="swiper-lazy-preloader">
+                                        </div>
+                                    </picture>
+                                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                                        <h3 class='leading-7 line-clamp-3'>Virtual teaching4</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
+                        <div class="swiper-button-prev">
+                        </div>
+                        <div class="swiper-button-next">
+                        </div>
+                    </div>
+                </div>
+                <a data-magicbox="dark" href='https://qhkarimeh.com/n/BS?preview=2414262109ef8193fbaa9aae4769cf96' class="col-span-3 md:col-span-2">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202108/87-f163f5714b885b53dd1bdb2b0584587f.jpg' alt='Holy Shrine of Hazrat Masoomeh'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Holy Shrine of Hazrat Masoomeh</h3>
+                    </div>
+                </a>
+                <a data-magicbox="dark" href='https://qhkarimeh.com/n/B2?preview=4a6aa77643489b7cec893c95db02994f' class="col-span-3 md:col-span-2">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/114-f9480e4e54b47d3c1ea58e278b00b21d.jpg' alt='The Quran and Hadith Center of the Ahl al-Bayt'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>The Quran and Hadith Center of the Ahl al-Bayt</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section data-type='headline1' class='flex overflow-hidden relative min-h-1/2 flex-wrap content-center justify-start' style='background-image:url(https://cloud.talambar.ir/jb2f9/202109/109-babe43dccb310880f0345739bd4944ca.jpg);background-repeat:repeat;background-attachment:fixed;background-position:center;background-size:cover;' id="headline1-36">
+        <div class="sm:max-w-xl p-5 md:p-10 lg:p-14 z-10">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl leading-normal sm:md:leading-normal md:leading-normal mb-2 sm:mb-4 md:mb-6"  style='color:#ffffff'>Holy Shrine of Hazrat Masoomeh</h2>
+            <div class="text-sm sm:text-base"  style='color:#ffffff'>
+            </div>
+        </div>
+    </section>
+    <section data-type='b2' class='flex overflow-hidden relative min-h-1/4 py-5 font-IRANYekan' style='background:#d7b509;background-image:url(https://cloud.talambar.ir/jb2f9/202109/110-4a6c20466a02d8845264e5106ce882a1.jpg);background-repeat:repeat;background-attachment:fixed;background-position:center;background-size:auto;' id="b2-3">
+        <div class='m-auto max-w-screen-lg w-full px-2 sm:px-4 lg:px-5'>
+            <header>
+                <h2 class='text-3xl leading-6 mb-5 text-center'  style='color:#ffffff'>Latest News</h2>
+            </header>
+            <div class='relative grid grid-cols-12 gap-0.5 sm:gap-1 md:gap-2 lg:gap-4'>
+                <a data-magicbox="light" href='https://qhkarimeh.com/n/f' class="flex flex-col max-w-md col-span-12 sm:col-span-6 md:col-span-4 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202106/59-1e884bc88155b521095a6d82aa507b68.jpg' alt='The Institute of Quran and Hadith'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>The Institute of Quran and Hadith</h3>
+                    </div>
+                </a>
+                <a data-magicbox="light" href='https://qhkarimeh.com/n/P' class="flex flex-col max-w-md col-span-12 sm:col-span-6 md:col-span-4 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202105/32-49dd45a2b06e7cccbb792cea3271f5ec.jpg' alt='Quran recitation-ladies'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Quran recitation-ladies</h3>
+                    </div>
+                </a>
+                <a data-magicbox="light" href='https://qhkarimeh.com/n/3' class="flex flex-col max-w-md col-span-12 sm:col-span-6 md:col-span-4 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202105/16-e3eec436f4b92751f43ab9ae71663726.jpg' alt='Ahl al-Bayt (AS) Quran and Hadith Center Organizes'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Ahl al-Bayt (AS) Quran and Hadith Center Organizes</h3>
+                    </div>
+                </a>
+                <a data-magicbox="light" href='https://qhkarimeh.com/n/J' class="flex flex-col max-w-md col-span-12 sm:col-span-6 md:col-span-4 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202105/15-8d92f9b3883839127b392368bf4d210a.jpg' alt='The young generations recitation rituals'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>The young generations recitation rituals</h3>
+                    </div>
+                </a>
+                <a data-magicbox="light" href='https://qhkarimeh.com/n/k' class="flex flex-col max-w-md col-span-12 sm:col-span-6 md:col-span-4 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-16 aspect-h-9 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202105/14-e95a6e92045f527137f2f0561f792ed1.jpg' alt='Invitation to the honorary cooperation of people fluent in foreign languages'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Invitation to the honorary cooperation of people fluent in foreign languages</h3>
+                    </div>
+                </a>
+            </div>
+            <footer class="text-center overflow-hidden pt-5 md:pt-10 pb-2">
+                <a class='btn-outline-light mx-auto btn-wide' href='https://qhkarimeh.com/n?view=latest'>نمایش همه</a>
+            </footer>
+        </div>
+    </section>
+    <section data-type='g5' class='flex overflow-hidden relative min-h-1/2 py-5 md:py-10 lg:py-16' style='background:#f8ebec;' id="g5-34">
+        <div class='m-auto max-w-screen-xl w-full px-2 sm:px-4 lg:px-5'>
+            <div class='relative grid grid-cols-12 gap-0.5 sm:gap-1 md:gap-2 lg:gap-4'>
+                <div data-magicbox="dark" class="flex flex-col max-w-md col-span-12 sm:col-span-6 lg:col-span-3 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/106-b86bfe37659c8814be64005735074ab7.jpg' alt='Image 1'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Image 1</h3>
+                    </div>
+                </div>
+                <div data-magicbox="dark" class="flex flex-col max-w-md col-span-12 sm:col-span-6 lg:col-span-3 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/101-1688791c9d687f98927fe5d2314fbc9c.jpg' alt='Image 1'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Image 1</h3>
+                    </div>
+                </div>
+                <div data-magicbox="dark" class="flex flex-col max-w-md col-span-12 sm:col-span-6 lg:col-span-3 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/108-fed630f1c1013a65089f6a9452044153.jpg' alt='Image 2'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Image 2</h3>
+                    </div>
+                </div>
+                <div data-magicbox="dark" class="flex flex-col max-w-md col-span-12 sm:col-span-6 lg:col-span-3 ">
+                    <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-lg overflow-hidden'>
+                        <img loading='lazy' class='object-cover w-full rounded-lg' src='#' data-src='https://cloud.talambar.ir/jb2f9/202109/107-0649095dd0a0c1f491399fc19edfeec7.jpg' alt='Image 2'>
+                    </picture>
+                    <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light'>
+                        <h3 class='leading-7 line-clamp-3'>Image 2</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-type='p4' class='flex overflow-hidden relative min-h-1/2 py-5 md:py-10 lg:py-16' style='background:#0e4662;' id="p4-44">
+        <div class='m-auto max-w-screen-xl w-full px-2 sm:px-4 lg:px-5'>
+            <header>
+                <h2 class='text-3xl leading-6 mb-5 text-center'  style='color:#ffffff'>آخرین نوشته‌ها</h2>
+            </header>
+            <div class="">
+                <div class="swiper h-full overflow-hidden rounded-3xl" data-swiper data-slidesPerView="auto" data-effect="coverflow">
+                    <div class="swiper-wrapper">
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide w-4/6 md:w-1/3 lg:w-1/4 p-0.5 md:p-1' data-swiper-autoplay="5000">
+                            <div data-magicbox="dark">
+                                <picture class='transition shadow-sm hover:shadow-md aspect-w-1 aspect-h-1 rounded-3xl overflow-hidden'>
+                                    <img loading='lazy' class='swiper-lazy object-cover w-full rounded-3xl' src='#' data-src='https://cdn.jibres.ir/img/default/image.png' alt='Your product’s title'>
+                                    <div class="swiper-lazy-preloader">
+                                    </div>
+                                </picture>
+                                <div class='absolute inset-x-0 bottom-0 block px-4 py-2 z-10 transition link-light text-sm'>
+                                    <h3 class='leading-7 line-clamp-3'>Your product’s title</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                    </div>
+                    <div class="swiper-button-next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id='pageFooter' data-xhr='pageFooter'>
+    <div class='desktop'>
+        <footer id="jFooter3" class="relative py-5" style='background:url("https://cdn.jibres.ir/img/sitebuilder/footer/f3/footer3-bg.svg") right bottom no-repeat,linear-gradient(254.96deg, HSL(257, 32%, 11%) 0%, HSL(314, 33%, 18%) 99.41%);'>
+            <div class='m-auto max-w-screen-xl w-full px-2 sm:px-4 lg:px-5'>
+                <div class="top flex items-end py-1 sm:py-2 md:py-3">
+                    <img class="inline-block w-32 h-32 rounded-lg bg-white" src="https://cloud.talambar.ir/jb2f9/202104/6-0ef228c40ac83dc9b3b32edd54c8210e.png" alt="E-learning Quran and Hadith">
+                    <div class="flex-1 px-2">
+                        <h2 class="text-2xl font-bold text-white mb-2 line-clamp-1">E-learning Quran and Hadith</h2>
+                        <div class="text-gray-300 line-clamp-3">Center of the Quran and Hadith Hazrat Fatima Masumah Sacred Sanctuary</div>
+                    </div>
+                </div>
+                <hr class="border-1 border-gray-600 my-5">
+                <div class="grid grid-cols-3 gap-3">
+                    <nav>
+                        <ul>
+                            <li data-layer="1" data-key="33">
+                                <a class="inline-block p-1 sm:p-2 hover:opacity-70 focus:opacity-50 transition text-gray-100" href="https://qhkarimeh.com/f/11">Sign Up</a>
+                            </li>
+                            <li data-layer="1" data-key="34">
+                                <a target="_blank" class="inline-block p-1 sm:p-2 hover:opacity-70 focus:opacity-50 transition text-gray-100" href="https://qhkarimeh.com/n/BB?preview=6abb2e957c69b8faac0943c81d761c9e">Donate</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li data-layer="1" data-key="5">
+                                <a class="inline-block p-1 sm:p-2 hover:opacity-70 focus:opacity-50 transition text-gray-100" href="https://instagram.com/qhkarimeh">instagram</a>
+                            </li>
+                            <li data-layer="1" data-key="20">
+                                <a class="inline-block p-1 sm:p-2 hover:opacity-70 focus:opacity-50 transition text-gray-100" href="https://t.me/elearn_admin">Telegeram</a>
+                            </li>
+                            <li data-layer="1" data-key="21">
+                                <a class="inline-block p-1 sm:p-2 hover:opacity-70 focus:opacity-50 transition text-gray-100" href="https://facebook.com/qhkarimeh">facebook</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li data-layer="1" data-key="40">
+                                <a class="inline-block p-1 sm:p-2 hover:opacity-70 focus:opacity-50 transition text-gray-100" href="https://qhkarimeh.com/n/Bj?preview=1168d58a4e52f67422567190caf9233f">About</a>
+                            </li>
+                            <li data-layer="1" data-key="41">
+                                <a class="inline-block p-1 sm:p-2 hover:opacity-70 focus:opacity-50 transition text-gray-100">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <hr class="border-1 border-gray-600 my-5">
+                <p class="text-gray-300 leading-relaxed py-8 opacity-60">Center of the Quran and Hadith</p>
+            </div>
+        </footer>
+    </div>
+    <div class='pwa'>
+        <nav class='flex'>
+            <div class='flex-1' data-key='home'>
+                <a href='https://qhkarimeh.com' class='selected'>
+                    <div class='icon'>
+                        <img src='data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M18%207.261V17.5c0%20.841-.672%201.5-1.5%201.5h-2c-.828%200-1.5-.659-1.5-1.5V13H7v4.477C7%2018.318%206.328%2019%205.5%2019h-2c-.828%200-1.5-.682-1.5-1.523V7.261a1.5%201.5%200%2001.615-1.21l6.59-4.82a1.481%201.481%200%20011.59%200l6.59%204.82A1.5%201.5%200%200118%207.26z%22%20fill%3D%22%235C5F62%22%2F%3E%3C%2Fsvg%3E' alt ='Home'>'>
+                    </i>
+                </div>
+                <div class='title'>Home</div>
+            </a>
+        </div>
+        <div class='flex-1' data-key='category'>
+            <a href='https://qhkarimeh.com/collection'>
+                <div class='icon'>
+                    <img src='data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5.5%202A1.5%201.5%200%20004%203.5V4h12v-.5A1.5%201.5%200%200014.5%202h-9zM2%207.5A1.5%201.5%200%20013.5%206h13A1.5%201.5%200%200118%207.5V8H2v-.5zm-1%204A1.5%201.5%200%20012.5%2010h15a1.5%201.5%200%20011.5%201.5v7a1.5%201.5%200%2001-1.5%201.5h-15A1.5%201.5%200%20011%2018.5v-7z%22%20fill%3D%22%235C5F62%22%2F%3E%3C%2Fsvg%3E' alt ='Tags'>'>
+                </i>
+            </div>
+            <div class='title'>Tags</div>
+        </a>
+    </div>
+    <div class='flex-1' data-key='cart'>
+        <a href='https://qhkarimeh.com/cart'>
+            <div class='icon'>
+                <img src='data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1%201c0-.552.45-1%201.004-1h1.505c.831%200%201.505.672%201.505%201.5v.56l12.574.908c.877.055%201.52.843%201.397%201.71l-.866%206.034A1.504%201.504%200%200116.63%2012H5.014v2h10.043a3.005%203.005%200%20013.011%203c0%201.657-1.348%203-3.01%203a3.005%203.005%200%2001-2.84-4H6.85a3.005%203.005%200%2001-2.84%204A3.005%203.005%200%20011%2017c0-1.306.838-2.418%202.007-2.83V3.01%202H2.004A1.002%201.002%200%20011%201zm4.014%203.064V10h11.18l.727-5.07-11.907-.866zM14.054%2017c0-.552.449-1%201.003-1%20.554%200%201.004.448%201.004%201s-.45%201-1.004%201a1.002%201.002%200%2001-1.003-1zM3.007%2017c0-.552.45-1%201.004-1s1.003.448%201.003%201-.449%201-1.003%201a1.002%201.002%200%2001-1.004-1z%22%20fill%3D%22%235C5F62%22%2F%3E%3C%2Fsvg%3E%0A' alt ='Cart'>'>
+            </i>
+        </div>
+        <div class='title'>Cart</div>
+    </a>
 </div>
+<div class='flex-1' data-key='profile'>
+    <a href='https://qhkarimeh.com/profile'>
+        <div class='icon'>
+            <img src='data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M10%200c5.514%200%2010%204.486%2010%2010s-4.486%2010-10%2010S0%2015.514%200%2010%204.486%200%2010%200zm6.24%2015a7.99%207.99%200%2001-12.48%200%207.99%207.99%200%200112.48%200zM10%2010a3%203%200%20100-6%203%203%200%20000%206z%22%20fill%3D%22%235C5F62%22%2F%3E%3C%2Fsvg%3E%0A' alt ='Profile'>'>
+        </i>
+    </div>
+    <div class='title'>Profile</div>
+</a>
+</div>
+</nav>
+</div>
+</footer>
+<div class="js">
+  <script async src="https://cdn.jibres.ir/js/jibres.min.js?1634482394">
+  </script>
+
+</div>
+</body>
+</html>
